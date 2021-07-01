@@ -56,6 +56,9 @@
             <td>Результат:</td>
             <td><html:text readonly="true" property="results"/></td>
         </tr>
+        <div style="color:red">
+            <html:errors />
+        </div>
         </tbody>
     </table>
 </html:form>

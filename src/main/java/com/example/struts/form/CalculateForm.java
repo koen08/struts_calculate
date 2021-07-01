@@ -39,16 +39,4 @@ public class CalculateForm extends ValidatorForm {
     public void setResults(Double results) {
         this.results = results;
     }
-
-//    @Override
-//    public ActionErrors validate(ActionMapping mapping, HttpServletRequest request) {
-////        ActionErrors actionErrors = new ActionErrors();
-////        if (!getFirstNumber().matches("\\d+") || !getSecondNumber().matches("\\d+")) {
-////            actionErrors.add("errorProper", new ActionMessage("error.msg.value"));
-////        }
-////        if (getTypeAction() == null) {
-////            actionErrors.add("errorProper", new ActionMessage("error.msg.type"));
-////        }
-////        return actionErrors;
-//    }
 }

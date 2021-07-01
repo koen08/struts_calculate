@@ -6,7 +6,13 @@
     <formset>
         <form name="calculateForm">
             <field property="firstNumber" depends="required">
-                <arg key="calculateForm.firstNumber"/>
+                <arg key="error.firstNumber"/>
+            </field>
+            <field property="secondNumber" depends="required">
+                <arg key="error.secondNumber"/>
+            </field>
+            <field property="typeAction" depends="required">
+                <arg key="error.typeAction"/>
             </field>
         </form>
     </formset>
