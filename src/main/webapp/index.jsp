@@ -41,11 +41,10 @@
         <tr>
             <td>Действие:</td>
             <td><html:select property="typeAction">
-                <option selected disabled>Выберите действие</option>
-                <option value="+">Сложение</option>
-                <option value="-">Вычитание</option>
-                <option value="*">Умножение</option>
-                <option value="/">Деление</option>
+                <html:option value="+">Сложение</html:option>
+                <html:option value="-">Вычитание</html:option>
+                <html:option value="*">Умножение</html:option>
+                <html:option value="/">Деление</html:option>
             </html:select></td>
         </tr>
         <tr>
