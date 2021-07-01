@@ -32,11 +32,21 @@
         <tbody>
         <tr>
             <td>Первое число:</td>
-            <td><html:text onkeyup="this.value = this.value.replace(/[^\d]/g,'');" property="firstNumber"/></td>
+            <td>
+                <p>
+                    <input required type="number" name="firstNumber"
+                           value="<bean:write name="calculateForm" property="firstNumber"/>">
+                </p>
+            </td>
         </tr>
         <tr>
             <td>Второе число:</td>
-            <td><html:text onkeyup="this.value = this.value.replace(/[^\d]/g,'');" property="secondNumber"/></td>
+            <td>
+                <p>
+                    <input required type="number" name="secondNumber"
+                           value="<bean:write name="calculateForm" property="secondNumber"/>">
+                </p>
+            </td>
         </tr>
         <tr>
             <td>Действие:</td>
@@ -56,7 +66,7 @@
             <td><html:text readonly="true" property="results"/></td>
         </tr>
         <div style="color:red">
-            <html:errors />
+            <html:errors/>
         </div>
         </tbody>
     </table>
