@@ -32,11 +32,11 @@
         <tbody>
         <tr>
             <td>Первое число:</td>
-            <td><html:text property="firstNumber"/></td>
+            <td><html:text onkeyup="this.value = this.value.replace(/[^\d]/g,'');" property="firstNumber"/></td>
         </tr>
         <tr>
             <td>Второе число:</td>
-            <td><html:text property="secondNumber"/></td>
+            <td><html:text onkeyup="this.value = this.value.replace(/[^\d]/g,'');" property="secondNumber"/></td>
         </tr>
         <tr>
             <td>Действие:</td>
@@ -54,7 +54,7 @@
         </tr>
         <tr>
             <td>Результат:</td>
-            <td><html:text property="results"/></td>
+            <td><html:text readonly="true" property="results"/></td>
         </tr>
         </tbody>
     </table>

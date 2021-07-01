@@ -1,13 +1,8 @@
 package com.example.struts.form;
 
-import org.apache.struts.action.ActionErrors;
-import org.apache.struts.action.ActionForm;
-import org.apache.struts.action.ActionMapping;
-import org.apache.struts.action.ActionMessage;
+import org.apache.struts.validator.ValidatorForm;
 
-import javax.servlet.http.HttpServletRequest;
-
-public class CalculateForm extends ActionForm {
+public class CalculateForm extends ValidatorForm {
     String firstNumber;
     String secondNumber;
     Character typeAction;
@@ -45,15 +40,15 @@ public class CalculateForm extends ActionForm {
         this.results = results;
     }
 
-    @Override
-    public ActionErrors validate(ActionMapping mapping, HttpServletRequest request) {
-        ActionErrors actionErrors = new ActionErrors();
-        if (!getFirstNumber().matches("\\d+") || !getSecondNumber().matches("\\d+")) {
-            actionErrors.add("errorProper", new ActionMessage("error.msg.value"));
-        }
-        if (getTypeAction() == null) {
-            actionErrors.add("errorProper", new ActionMessage("error.msg.type"));
-        }
-        return actionErrors;
-    }
+//    @Override
+//    public ActionErrors validate(ActionMapping mapping, HttpServletRequest request) {
+////        ActionErrors actionErrors = new ActionErrors();
+////        if (!getFirstNumber().matches("\\d+") || !getSecondNumber().matches("\\d+")) {
+////            actionErrors.add("errorProper", new ActionMessage("error.msg.value"));
+////        }
+////        if (getTypeAction() == null) {
+////            actionErrors.add("errorProper", new ActionMessage("error.msg.type"));
+////        }
+////        return actionErrors;
+//    }
 }
