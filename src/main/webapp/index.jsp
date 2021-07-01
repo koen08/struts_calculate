@@ -37,7 +37,6 @@
         }
     </style>
     <table border="0">
-        <p style="color: red; font-size: 35px;"><html:errors property="errorProper"/></p>
         <tbody>
         <tr>
             <td>Первое число:</td>
