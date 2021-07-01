@@ -2,6 +2,15 @@
 <%@taglib uri="http://struts.apache.org/tags-bean" prefix="bean" %>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
 <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator program</title>
+</head>
+<body>
 <html:form action="/results">
     <style>
         * {
@@ -71,3 +80,5 @@
         </tbody>
     </table>
 </html:form>
+</body>
+</html>
